@@ -1,2 +1,2 @@
 all:
-	@python3 app/app.py 
+	@cd app && python3 app.py 
