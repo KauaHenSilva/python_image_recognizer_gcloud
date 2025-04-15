@@ -1,0 +1,12 @@
+runtime: python
+env: flex
+
+runtime_config:
+  operating_system: ubuntu24
+  python_version: 3.11.11
+
+entrypoint: gunicorn --bind :$PORT app.app:app
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 5
