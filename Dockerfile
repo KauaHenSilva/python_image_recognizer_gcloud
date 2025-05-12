@@ -10,7 +10,5 @@ RUN apt-get update && apt-get install -y \
     libgl1
 
 RUN pip install -r requirements.txt
-
-EXPOSE 8080
 CMD ["python", "app/app.py"]
 
