@@ -1,0 +1,2 @@
+docker build -t gcr.io/{id_user}/{project_name} .
+docker push gcr.io/{id_user}/{project_name}

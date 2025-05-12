@@ -6,7 +6,7 @@ import cv2
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__, template_folder='templates')
-model = load_model('models/cifar10_model.keras')
+model = load_model('app/models/cifar10_model.keras')
 
 class_names = [
     'airplane', 'automobile', 'bird', 'cat', 'deer',
